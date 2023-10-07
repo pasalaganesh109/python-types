@@ -13,3 +13,14 @@ print(type(c))
 print(type(d))
 print(type(e))
 print(type(f))
+
+
+#printing N*N diagonal matrix
+n = int(input())
+for i in range(n):
+   for j in range(n):
+      if i == j or j == n - 1 - i:
+          print("*", end="")
+      else:
+          print(" ", end="")
+   print() 
